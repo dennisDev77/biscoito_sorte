@@ -1,20 +1,16 @@
 <p align="center">
-    <img src="./public/images.png" width="200px">
+    <img src="./public/biscoito.png" width="200px">
 </p>
 
-<p align="center">
-<b>stackdev, um pequeno projecto 
- que reune as tecnologias(Tiradas do github) que um desenvolver trabalha com ele. 🚀👩‍💻</b>
-</p>
 
-<h2 id="templates">📝 StackDev Github</h2>
+<h2 id="templates">📝 Biscoito da sorte</h2>
 
 <h2 id="contribuir">Contribuir 🚀</h2>
 
 Se você quiser contribuir, clone este repositório, crie sua própria branch de trabalho e mãos à obra!
 
 ```bash
-git clone https://github.com/dennisDev77/stack_dev.git
+git clone https://github.com/dennisDev77/biscoito_sorte.git
 ```
 
 ```bash

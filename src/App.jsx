@@ -31,7 +31,7 @@ const App = () => {
 
 const Botao = ({ nome, acaoBtn }) => (
   <div>
-    <button onClick={acaoBtn}>{nome}</button>
+    <button onClick={acaoBtn} className='botao'>{nome}</button>
   </div>
 );
 

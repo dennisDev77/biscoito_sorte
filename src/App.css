@@ -17,4 +17,11 @@ body{
   font-style: italic;
   color: #dd7b22;
   text-align: center;
+  font-size: 1.5rem;
+}
+.botao{
+ box-shadow: 0 0 2px 1px #dd7b22;
+ padding: .5rem;
+ padding-inline: .8rem;
+ border-radius: .2rem;
 }

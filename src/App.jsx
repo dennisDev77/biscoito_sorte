@@ -1,8 +1,25 @@
 import React, { useState } from 'react';
 import img from './assets/biscoito.png';
 import './App.css';
+import gsap from 'gsap'
 
 const App = () => {
+
+  const anima=React.useRef()
+
+  React.useEffect(()=>{
+    gsap.fromTo(anima.current, {
+      opacity:0,
+        x:200,
+        duration:1
+    },
+      {   
+        opacity:1,
+          x:0,
+      })
+
+  }, [anima])
+
   const [textoFrase, setTextoFrase] = useState('');
 
   const frases = [
@@ -24,7 +41,10 @@ const App = () => {
     <div className="container">
       <img className="img" src={img} alt="Biscoito da sorte" />
       <Botao nome="Abrir biscoito" acaoBtn={quebraBiscoito} />
-      <h3 className="textoFrase">{textoFrase}</h3>
+
+      <div ref={anima}>
+      <h3 className="textoFrase" >{textoFrase}</h3>
+      </div>
     </div>
   );
 };

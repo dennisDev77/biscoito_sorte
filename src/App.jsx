@@ -11,12 +11,12 @@ const App = () => {
     gsap.fromTo(anima.current, {
       opacity:0,
         y:-200,
-        duration:2
+        
     },
       {   
         opacity:1,
-        y:0,
-        
+         y:0,
+         duration:2
       })
 
   }, [anima])
@@ -39,8 +39,8 @@ const App = () => {
   };
 
   return (
-    <div className="container">
-      <img className="img" src={img} alt="Biscoito da sorte" ref={anima}/>
+    <div className="container" ref={anima}>
+      <img className="img" src={img} alt="Biscoito da sorte" />
       <Botao nome="Abrir biscoito" acaoBtn={quebraBiscoito} />
 
       <div >

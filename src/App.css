@@ -24,4 +24,6 @@ body{
  padding: .5rem;
  padding-inline: .8rem;
  border-radius: .2rem;
+ border: none;
+ outline: none;
 }

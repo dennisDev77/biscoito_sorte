@@ -10,12 +10,13 @@ const App = () => {
   React.useEffect(()=>{
     gsap.fromTo(anima.current, {
       opacity:0,
-        x:200,
-        duration:1
+        y:-200,
+        duration:2
     },
       {   
         opacity:1,
-          x:0,
+        y:0,
+        
       })
 
   }, [anima])
@@ -39,11 +40,11 @@ const App = () => {
 
   return (
     <div className="container">
-      <img className="img" src={img} alt="Biscoito da sorte" />
+      <img className="img" src={img} alt="Biscoito da sorte" ref={anima}/>
       <Botao nome="Abrir biscoito" acaoBtn={quebraBiscoito} />
 
-      <div ref={anima}>
-      <h3 className="textoFrase" >{textoFrase}</h3>
+      <div >
+      <h3 className="textoFrase">{textoFrase}</h3>
       </div>
     </div>
   );
